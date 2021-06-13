@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThemMonActivity"
+    android:background="@drawable/bg1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm Menu"
+        android:gravity="center"
+        android:textSize="23sp"
+        android:textColor="@color/teal_200"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:layout_height="wrap_content">
+       <TextView
+           android:layout_width="0dp"
+           android:layout_weight="0.4"
+           android:text="Tên Món"
+           android:layout_height="wrap_content">
+
+       </TextView>
+       <EditText
+           android:layout_width="0dp"
+           android:layout_weight=".6"
+           android:id="@+id/txtTenMon"
+           android:layout_height="wrap_content"
+           >
+       </EditText>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:text="Giá Bán"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <EditText
+            android:layout_width="0dp"
+            android:inputType="numberDecimal"
+            android:layout_weight=".6"
+            android:id="@+id/txtGia"
+            android:layout_height="wrap_content"
+            >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:text="Đơn Vị Tính"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <Spinner
+            android:layout_width="0dp"
+            android:inputType="numberDecimal"
+            android:layout_weight=".6"
+            android:id="@+id/spnDVT"
+            android:layout_height="wrap_content"
+            >
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:text="Thêm món"
+            android:id="@+id/btnThemMon"
+            android:layout_height="match_parent">
+
+        </Button>
+
+    </LinearLayout>
+</LinearLayout>

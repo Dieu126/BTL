@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1">
+    <LinearLayout
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvSoBan"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="#FFC107"
+            android:text="8"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/tvMonAn"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="Phở gà \nPhowr bò"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/tvGia"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#FF0000"
+            android:layout_height="match_parent"
+            android:text="8"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Hủy"
+            android:id="@+id/btnHuy"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Thanh Toán"
+            android:id="@+id/btnThanhToan"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

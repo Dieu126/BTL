@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTenMonPreview"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#FF0000"
+            android:text="NO NAME" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Số lượng:" />
+
+        <EditText
+            android:id="@+id/txtSlDat"
+            android:inputType="number"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:imeOptions="actionDone"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="OK"
+            android:id="@+id/btnOK"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Hủy"
+            android:id="@+id/btnHuy"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

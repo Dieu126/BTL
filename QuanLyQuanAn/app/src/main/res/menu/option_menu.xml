@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/navBanHang" android:title="Bán hàng"/>
+    <item android:id="@+id/navThucDon" android:title="Thực đơn"/>
+    <item android:id="@+id/navBaoCao" android:title="Báo cáo"/>
+    <item android:id="@+id/navDatMon" android:icon="@drawable/plus" app:showAsAction="always"/>
+</menu>
