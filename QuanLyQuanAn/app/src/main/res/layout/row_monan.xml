@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:weightSum="5">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/imgItem"
+                android:layout_width="50px"
+                android:layout_height="150px"
+                android:src="@drawable/bowl"
+                android:layout_weight="0.5" />
+
+
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="4">
+
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lbTenMon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Bò Húc"
+                        android:textSize="20dp"
+                        android:textColor="#060606" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                    <TextView
+                        android:id="@+id/lbGia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Giá : 12.000"
+                        android:textColor="#060606"
+                        android:textSize="18dp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imgsang"
+                android:layout_width="50px"
+                android:layout_height="150px"
+                android:layout_weight="0.5" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

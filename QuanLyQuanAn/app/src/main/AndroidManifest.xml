@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quanlyquanan">
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bowl"
+        android:label="Phần mềm quản lý món ăn"
+        android:roundIcon="@drawable/bowl"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ThongKeActivity" android:parentActivityName=".ChuaThanhToanActivity"></activity>
+        <activity android:name=".ThanhToanActivity" android:parentActivityName=".ChuaThanhToanActivity"/>
+        <activity android:name=".ChuaThanhToanActivity" />
+        <activity android:name=".DatMonActivity" />
+        <activity android:name=".SuaMon" android:parentActivityName=".ThucDonActivity"/>
+        <activity android:name=".ThemMonActivity" android:parentActivityName=".ThucDonActivity" />
+        <activity android:name=".ThucDonActivity" android:parentActivityName=".ChuaThanhToanActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
